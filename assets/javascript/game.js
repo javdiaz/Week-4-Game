@@ -85,7 +85,7 @@ $(document).ready(function() { //waits intil the page fully load before running 
                 //if statement determines if the users cobined total is greater to the random computer number.
                 //this must be greater and a single "else" cant be used because the number would wlways be lower and the user would always lose.
             } else if (counter > computerNumber) {
-                $('#status').html('Poor Flinstone!')
+                $('#status').html('Poor Flintstone!')
                 losses++;
                 audioLose.play();
                 $('#loss').html(losses);
