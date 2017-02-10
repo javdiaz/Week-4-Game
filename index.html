@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rock-A-Pulco</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Carter+One" rel="stylesheet">
+    
+  </head>
+  <body>
+    <div id = "main-container"> <!-- main-container -->
+    <nav class="navbar navbar-default navbar-fixed-top" id="header">
+      <div class="container" id="header">
+        <h1><span>Rock-A-Pulco<span></h1>
+        </div>
+      </nav>
+      <div id = "main-content"> <!-- main-content -->
+      <div id="row">
+        <div id="col-md-12">
+          <div class="panel panel-default" id="instructionTitle">
+            <div class="panel-heading">
+              <h3 class="panel-title">INSTRUCTIONS</h3>
+            </div>
+            <div class="panel-body" id="instructionContent">
+              <p>1. The computer will generate a random number from 19 to 120.</p>
+              <p>2. Click on one of the Flintstones characters and you will get a random number from 1 to 12.</p>
+              <p>3. Keep clicking on the characters to increase your random number. Match the computers random number to win!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="row">
+        <div id = "col-md-12" class="flintstones">
+          <div class="panel panel-default" id="imagePanel">
+            <div class="panel-body">
+              <div id="clickImages"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="row">
+        <div id = "col-md-12" class="scorekeeping">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">SCORE KEEPER</h3>
+            </div>
+            <div class="panel-body">
+              <div id="computerNumber">
+                <h3>Your Numbers Must Equal: <span class="value"></span></h3>
+              </div>
+              <div id ="totalScore">
+                <h3>Your Total Score Is: <span id ="yourScore">0</span></h>
+              </div>
+              
+              <!-- <div class = "container" > -->
+                <div id="scoreboard">
+                  <h3><span id="status"></span></h3>
+                  <h3>Wins: <span id="win"></span></h3>
+                  <h3>Losses: <span id="loss"></span> </h3>
+                </div>
+              <!-- </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      </div><!-- main-content -->
+      <nav class="navbar navbar-default navbar-fixed-bottom" id="footer">
+        <div class="container">
+          <a href="https://en.wikipedia.org/wiki/The_Flintstones" target = "_blank">Meet The Flintones</a>
+          <p>Flinstones are TM & &copy; Hanna-Barbera</p>
+        </div>
+      </nav>
+      </div> <!-- main-container -->
+    </body>
+  </html>
