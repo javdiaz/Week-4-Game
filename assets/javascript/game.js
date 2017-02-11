@@ -5,7 +5,6 @@ $(document).ready(function() { //waits intil the page fully load before running 
     var losses = 0;
     var audioWin = new Audio('assets/audio/fred.wav'); //plays the winning audio file in assests/audio
     var audioLose = new Audio('assets/audio/bamm.wav'); //plays the lossing audio file in assests/audio
-
     //Function allows the computer to select a main random number between 19-120, also used for the users clickImages random number
     function getRandomInt(min, max) {
         return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -92,6 +91,10 @@ $(document).ready(function() { //waits intil the page fully load before running 
                 $('#clickImages').empty(); //clears the clickImages so they dont multiply after each game, learned this the hardway!
                 createImages(); //function call to create new random numbers for the userImages
                 playGame(); //function call to restart the playGame
+            } //after 7 games, the round ends and the browser resets
+            if (wins > 7 || losses > 7) {
+                location.reload();
+
             }
         });
     }
